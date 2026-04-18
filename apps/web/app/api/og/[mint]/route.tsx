@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 const TIER_CONFIG: Record<string, { color: string; bg: string; label: string }> = {
   GOD_TIER: { color: "#ffb020", bg: "#2a1f00", label: "GOD TIER" },
