@@ -1,11 +1,5 @@
 {
   "installCommand": "cd ../.. && npm install -g pnpm@9.12.0 && pnpm install --no-frozen-lockfile",
   "buildCommand": "cd ../.. && pnpm --filter web build",
-  "outputDirectory": ".next",
-  "crons": [
-    {
-      "path": "/api/cron/snapshot",
-      "schedule": "0 0 * * *"
-    }
-  ]
+  "outputDirectory": ".next"
 }
